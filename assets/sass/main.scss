@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import "./components/_mixin-common.scss";
+
+@import "./components/_reset.scss";
+@import "./components/_form_reset.scss";
+@import "./components/_common.scss";
+
+@import "./pages/_global.scss";
+@import "./pages/_index.scss";
+@import "./pages/_about.scss";
+
+@import "./pages/_rp_global.scss";
+@import "./pages/_rp_index.scss";
+@import "./pages/_rp_about.scss";
