@@ -65,13 +65,14 @@ export default {
     // https://go.nuxtjs.dev/axios
     // '@nuxtjs/axios',
     '@nuxt/http',
+    '@nuxtjs/style-resources',
     'nuxt-svg-loader',
     'nuxt-user-agent',
   ],
 
   //
   styleResources: {
-    sass: ['~/assets/sass/utilities.scss']
+    scss: ['~/assets/sass/utilities.scss']
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
