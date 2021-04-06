@@ -18,7 +18,11 @@
 
     </transition>
     <Footer :is-show-logo="true" />
-    <Loader :is-show="loading" />
+
+    <transition name="fade" mode="out-in" appear>
+      <Loader v-if="loading" />
+    </transition>
+
   </div>
 </template>
 
