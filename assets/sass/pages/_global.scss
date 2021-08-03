@@ -108,12 +108,7 @@
 /* head */
 /* --------------------------------------------- */
 #head {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  padding: 30px;
-  box-sizing: border-box;
+  margin: 30px;
 
   &.scrollOver {}
 
@@ -130,6 +125,8 @@
     .inner {
       .nav {
         li {
+          display: inline-block;
+          margin: 0 15px 0 0;
           a {
             &.router-link-exact-active {}
 

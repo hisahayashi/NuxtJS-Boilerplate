@@ -54,3 +54,10 @@ let Component = Vue.extend({
 
 export default Component
 </script>
+
+
+<style lang="scss">
+#about{
+  margin: 30px;
+}
+</style>

@@ -2,7 +2,7 @@ const URL = process.env.BASE_URL
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
   ssr: true,
 
   head: {
@@ -49,7 +49,8 @@ export default {
     {
       src: '~/plugins/vue-youtube',
       mode: 'client'
-    }
+    },
+    '@/plugins/utils'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

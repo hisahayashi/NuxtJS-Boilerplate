@@ -1,26 +1,20 @@
 <template>
   <div id="wrap">
-    <Header :is-show-logo="true" />
     <transition name="fade" mode="out-in" appear>
 
       <article class="common_container">
         <div class="inner">
+
+          <p>{{error.statusCode}}</p>
 
           <section class="common_section">
             <div class="text">お探しのページが見つかりませんでした。<br>お手数ですが、トップページから再度ご覧になりたいページをお探しください。</div>
             <p class="btn"><NuxtLink to="/">トップへ</NuxtLink></p>
           </section>
 
-          <!-- <p>{{error.statusCode}}</p> -->
-
         </div>
       </article>
 
-    </transition>
-    <Footer :is-show-logo="true" />
-
-    <transition name="fade" mode="out-in" appear>
-      <Loader v-if="loading" />
     </transition>
 
   </div>
@@ -66,5 +60,10 @@ let Component = Vue.extend({
 export default Component
 </script>
 
-<style>
+
+<style lang="scss">
+.common_container{
+  margin: 30px;
+  line-height: 1.5;
+}
 </style>

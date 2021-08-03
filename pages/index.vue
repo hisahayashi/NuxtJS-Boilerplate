@@ -56,5 +56,8 @@ export default Component
 </script>
 
 
-<style>
+<style lang="scss">
+#index{
+  margin: 30px;
+}
 </style>
